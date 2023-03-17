@@ -38,7 +38,7 @@ const Books = () => {
             <>
             {books.map(book => {
                 return <div key={book.id}>
-                    <Link className='hover:underline' to={`/books/${book.id}`}>{book.title}</Link>
+                    <Link className='hover:underline' to={`/books/${book.id} ${book.title} ${book.author}`}>{book.title}</Link>
                 </div>
             })}
             </>
